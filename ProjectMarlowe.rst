@@ -9,4 +9,4 @@ Firefox Extension - Get objectivity score of text
 
 
 
-I setup a master repo which is the devops and I add any microservice to it as a git submodule.
+I setup a master repo which is the devops and I add any microservice to it as a git submodule.  Using github for our host for this open source project.
