@@ -31,6 +31,17 @@ Ok, we have an API in production on Heroku with Wercker handling continuous inte
 
 ## Chrome Extension
 
-This is going to be my very first time building a browser extension.  Pretty excited about it, found [this little tutorial](https://www.sitepoint.com/create-chrome-extension-10-minutes-flat/) to get started with and everything seems like it's pretty much going to be HTML, CSS, and Javascript.  First thing, setup new repository and submodule for any extension code within the base [marlowe_devops](https://github.com/iepathos/marlowe_devops) repository.  
+This is going to be my very first time building a browser extension.  Pretty excited about it, found [this little tutorial](https://www.sitepoint.com/create-chrome-extension-10-minutes-flat/) to get started with and everything seems like it's pretty much going to be HTML, CSS, and Javascript.  First thing, setup new repository and submodule for any extension code within the base [marlowe_devops](https://github.com/iepathos/marlowe_devops) repository.  I built out the chrome extension here [marlowe_chrome](https://github.com/iepathos/marlowe_chrome).  It is very minimal so far using a popup with text input and button to post to the Marlowe API and return the objectivity score.  Will likely improve this setup later for a more highlight and right click setup rather than this popup copy paste setup.  Starting out basic with it and moving along for now.  
+
+Next step is to package this extension and get it up on the store so we can get it in production.  We want to make sure that whole process is automated for continuous integration using wercker because manual setups are for suckers and robots.
+
+
+
+
+## Firefox Extension
+
+
+
+
 
 
