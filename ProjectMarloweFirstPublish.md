@@ -1,3 +1,6 @@
 # Project Marlowe - First Publish
 
-Ok, the chrome extension frontend for the marlowe objectivity project has been through some testing and improvement.  It isn't perfect or pretty yet, but it works and that means get it out there in front of people to start gathering some more feedback.  I think its ready to be published up on the chrome app store for public consumption.  Time to go through the Google Chrome developer information and get it up there.
+Ok, the chrome extension frontend for the marlowe objectivity project has been through some testing and improvement.  It isn't perfect or pretty yet, but it works and that means get it out there in front of people to start gathering some more feedback.  I think its ready to be published up on the chrome app store for public consumption.  Time to go through the Google Chrome developer information and get it up there.  After that, going to signup on AMO and publish the Firefox extension.
+
+
+
