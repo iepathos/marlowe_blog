@@ -9,3 +9,9 @@ Ideally, a human can go over the data afterward and weed out any outliers, but t
 
 
 Downloading the 8 GB reddit comments json takes a little while.  It is 1.7 billion comments, now that's some real data, not a measely 10k.  I'm setting up a script in the dataset repository to handle parsing the comments and then checking their score with the existing services.  Going to query services locally with it and buildout a docker-compose.yml in the base devops repo that will spin up the two services on different ports and then call the reddit parse script to use those services.
+
+
+
+Ok, parsed some comments, there are comments getting through as objective that I think are subjective, not the other way around.  I think its because these algorithms are ranking words, mis-spellings, and emojis as objective rather subjective and its wrong about that.  Part of the reason I'm building this dataset is to fix this error rate in the existing algorithms built off the movie review dataset that textblob is using and the dictionary approach that usent is using.  Going through these to fix what I can and going to scout a bit to see if I can find any volunteers interested in contributing by proofreading the objectivity dataset.
+
+Once I've proof read a chunk of the comments, I'm going to build out the new microservice that will be trained off of this new dataset.  This part is going to be really easy, essentially going to copy the existing marlowe_objectivity microservice and modify it a little bit to use the objectivity dataset.  I'm sure any of you unfamiliar with microservices reading this may be thinking, copy blocks of code, oh no!!  That isn't DRY!  You are correct, but when dealing with microservices code re-use needs to be dealt with carefully.  There are components to the existing usent and objectivity microservices I've built where I duplicate code to both.  Code re-use in microservices is a major source of coupling and needs to be watched carefully.
